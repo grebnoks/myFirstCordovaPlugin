@@ -23,7 +23,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="my-cordova-plugin"
     version="2.0.3-dev">
-    <name>my-cordova-plugin</name>
+    <name>My Cordova Plugin</name>
     <description>My First Cordova Plugin</description>
 
     <js-module src="www/plugin.js" name="plugin">
@@ -34,12 +34,12 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="MyCordovaPlugin" >
-                <param name="android-package" value="com.example.MyCordovaPlugin"/>
+                <param name="android-package" value="MyCordovaPlugin"/>
                 <param name="onload" value="true"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/com/example/MyCordovaPlugin" target-dir="src/com/example" />
+        <source-file src="src/android/MyCordovaPlugin.java" target-dir="src" />
     </platform>
 
     <!-- ios -->
