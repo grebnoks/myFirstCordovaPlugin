@@ -23,12 +23,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="my-cordova-plugin"
     version="2.0.3-dev">
-    <name>My First Cordova Plugin</name>
-    <description></description>
-    <license>Apache 2.0</license>
-    <keywords>cordova,plugin, echo</keywords>
-    <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git</repo>
-    <issue>https://issues.apache.org/jira/browse/CB/component/12320648</issue>
+    <name>my-cordova-plugin</name>
+    <description>My First Cordova Plugin</description>
 
     <js-module src="www/plugin.js" name="plugin">
         <clobbers target="MyCordovaPlugin" />
@@ -68,7 +64,7 @@
     <!-- browser -->
     <platform name="browser">
         <config-file target="config.xml" parent="/*">
-            <feature name="Plugin">
+            <feature name="MyCordovaPlugin">
                 <param name="browser-package" value="Plugin" />
             </feature>
         </config-file>
@@ -81,7 +77,7 @@
     <!-- osx -->
     <platform name="osx">
         <config-file target="config.xml" parent="/*">
-            <feature name="Plugin">
+            <feature name="MyCordovaPlugin">
                 <param name="ios-package" value="CDVDevice"/>
             </feature>
         </config-file>
